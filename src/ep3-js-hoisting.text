@@ -1,0 +1,71 @@
+var x = 7;
+function getName(){
+    console.log("namaste javascrit")
+}
+
+getName();
+console.log(x);
+
+the output will be 
+"namaste javascript"
+7
+
+now do the below
+getName();
+console.log(x);
+var x = 7;
+function getName(){
+    console.log("namaste javascrit")
+}
+
+the output will be 
+we are trying to access x even before we have put some value in it
+"namaste javascript"
+x will be undefined
+hoisting in js where we can access variable and functions even before we have initiaslised for put some value in it
+
+
+what is the output for the below
+console.log(x);
+console.log(getName);
+var x = 7;
+function getName(){
+    console.log("namaste javascript);
+}
+the output is 
+undefined
+f getName(){
+    console.log("namaste javascript);
+}
+
+whenever we run js program gec is created, created in 2 phases
+1 is memory allocation phases
+2 is code execution 
+thats we go the mentioned output 
+
+basically this hoisting happening because of the memory allocation phase and then code execution phase
+
+what is the output for the below
+console.log(x);
+console.log(getName());
+console.log(getName)
+const getName = ()=>{
+    console.log("namaste)
+}
+the output is 
+x is not defined
+getName is not a function 
+getName will be undefined
+so arrow function variable behaves same as variable and getName will be undefined during memory phase,  
+thats why when we do getName() is giving funtcion not found
+
+
+
+
+
+
+
+
+
+
+

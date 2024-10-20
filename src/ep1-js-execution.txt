@@ -1,0 +1,21 @@
+eveything in js runs in execution context
+
+execution context contains 2 parts 
+
+first one is memory component
+place where variables and functions are stored as key value pairs 
+another word for this memory component is known as variable environment
+this is an env where all the variables and functions are stored as the key value pairs
+
+second one is code component
+place where code is executed one line at a time
+another word is thread of execution
+just a thread where code is executed one line at a time
+js is synchronous single threaded language
+single threaded means one line at time in a specific sequence
+
+AJAX- 
+A stands for asyncrhonous
+
+
+

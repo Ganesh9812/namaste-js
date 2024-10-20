@@ -1,0 +1,47 @@
+what happens when we run a js program
+execution context is created
+
+var n = 2;
+function squrare(num){
+    var ans = num * num;
+    return ans;
+}
+
+var square2 = square(n);
+var square4 = square(4);
+
+now lets see how the js code runs for the above code
+now exection context is created with memory and code components
+
+memory creation phase
+js will allocate memory to all the variables and functions
+as soon as it sees n it allocates memory to var n=2 and store a special value undefined
+now goes to line2 and see a fucntion square, now it will allocate memory to square, it store the entire function code
+now goes to line10 and store undefined for the variable for the line 10 and line11
+
+now code exection phase
+now the first line of the code executed,
+now 2 will allocated
+then see the function and nothing to do
+then moves to line6, here function invocation happens and a new exection context is created, 
+now this exection context will have momery and code components and at the line return statement, 
+this new exection context work is done and deleted and moved the code part of the old execution context
+after the return, now the undefined value of the line10 will be replaced with the return value
+same process with line11
+
+and now the code is done, so the whole original exection context also will be deleted
+
+callstack
+its a stack and bottom of the stack we will have the global exection context
+and for a function call gloabal execution context comes on top of the gec and gets exectuted and then removed from the call stack and then gec will get exectuted again]
+
+callstack names 
+exection context stack
+program stack
+control stack
+runtime stack
+machine stack
+
+
+
+
